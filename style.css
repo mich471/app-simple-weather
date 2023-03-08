@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.weather-card {
+    width: 230px;
+    height: 280px;
+    padding: 18px;
+    background-color: rgb(56 189 248);
+    border-radius: 0.5rem;
+}

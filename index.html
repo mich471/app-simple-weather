@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body class="bg-zinc-100">
+  <header class="flex justify-between	bg-sky-400 px-5">
+    <div class="flex items-center gap-4">
+      <h1 class="font-black	text-xl	">AGWEATHER</h1>
+      <img src="./public/icons8-weather-50.png" alt="Logo">
+    </div>
+    <div class="my-auto">
+      ¡Te daremos la mejor experiencia!
+    </div>  
+    <ul class="flex items-center gap-4">
+      <li class="hover:bg-sky-700 w-28 rounded-lg">
+        <a target="_blank" class="flex flex-col items-center justify-center  py-4" href="https://openweathermap.org/">
+          <img class="w-14" src="./public/icons8-api-64.png" alt="conoce la Api">
+        </a>
+      </li>
+      <li class="hover:bg-sky-700 w-28 rounded-lg">
+        <a target="_blank"  class="flex flex-col items-center justify-center  py-4" href="https://github.com/mich471/WEATHER-APP">
+        <img class="w-14" src="./public/icons8-github-50.png" alt="repositorio">
+        </a>
+      </li>
+
+    </ul>
+    
+  </header>
+  <main class="	my-20 ">
+    <div class="input-container mx-auto w-2/4 relative">
+      <form action="">
+        <input class="bg-slate-200 h-14 w-80 mr-5	rounded-lg text-center placeholder:text-sky-400	text-base outline-0 hover:bg-slate-300" type="text" id="input-data" placeholder="Agrega el nombre de tu ciudad">
+        <button class="bg-sky-400 h-14 w-40 rounded-lg text-base hover:bg-sky-700"  id="add">¡Consultar!</button> 
+        <button class=" active:animate-ping hover:shadow-red-400 top-1.5	 text-base ml-8 absolute"  id="remove"><img src="./public/icons8-eliminar.svg" alt=""></button>    
+   
+      </form>
+    </div>
+    <span id="mensaje"></span>
+    <div class="cards-container flex mt-14 flex-wrap justify-center gap-8" id="app">
+      
+    </div>
+  </main>
+  <script src="./index.js"  ></script>
+</body>
+</html>
