@@ -1,0 +1,10 @@
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&s(o)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();const m=document.querySelector("#app"),f=document.querySelector("#input-data"),d=document.querySelector("#add");d.addEventListener("click",function(n){n.preventDefault()});const v=n=>Math.floor(n-273.15);d.addEventListener("click",()=>{const s=`https://api.openweathermap.org/data/2.5/weather?q=${f.value}&appid=f8396fcccfe05d620a5a5ee79e6b22d2&lang=sp`;window.fetch(s).then(e=>e.json()).then(e=>{const{name:t,sys:o,main:u,weather:l}=e,i=document.createElement("span");i.className="absolute top-0 cursor-pointer	right-2 text-xl hover:text-3xl hover:text-white",i.textContent="x",i.addEventListener("click",function(h){c.remove()});const p=`
+      <div class="card-details rounded-xl	">
+      <p class="city text-xl mb-3.5 font-medium">${t}<span class="ml-2.5 font-extrabold	">${o.country}</span></p>
+      <p class="temperature text-5xl font-extrabold	text-center	">${v(u.temp)}<span class="ml-2.5">°C</span></p>
+    </div>
+    <div class="card-image">
+      <img src="https://openweathermap.org/img/wn/${l[0].icon}@2x.png" alt="clima">
+      <p class="city text-xl mb-3.5 font-medium text-center	">${l[0].description}</p>
+    </div>
+      `,c=document.createElement("div");c.className="weather-card flex flex-col items-center justify-around relative",c.innerHTML=p,c.appendChild(i),m.appendChild(c)})});document.querySelector("#remove");remove.addEventListener("click",function(n){container.remove()});

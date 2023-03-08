@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script type="module" crossorigin src="/app-simple-weather/assets/index-710c9719.js"></script>
+  <link rel="stylesheet" href="/app-simple-weather/assets/index-76cf8d6e.css">
+</head>
+<body class="bg-zinc-100">
+  <header class="flex justify-between	bg-sky-400 px-5">
+    <div class="flex items-center gap-4">
+      <h1 class="font-black	text-xl	">AGWEATHER</h1>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQklEQVR4nO2Zu0tcQRSHPx+rEARBiGA0BKzsDKZJYaGlhYkJYnz0FiLa+w9otLKxsfOJrTap0kT/BRMfKwSboJVRAuJjZMgRlkWZmbs7c0e8P/g1y90759s5Z87sDGTKlKkcqgEGgDXgF3ABKE++kDHWZEw9dln0Gch7DNzkQ+BTKQCVwGyKAKrIXyUmZ81FELwq8kySdFKRus8WokbyUkXqvO0CMBBBsMrgfhuQ9QgCVQav2IDsRxCoMlj3GaP+eg7iGlgGeoBGoApoAnqlCd5YvEPHaJRPiD3grWH8DssGnBqIToeXNgHwf6aOYgS5Atpx0ztDmqUCsg1U46712EC0D4BOR5APaYBcAotAN9AA5IBWYAL4XZBiww4gr0KD5A01oKEWCmBsZ6Y2JMgf4I1lYPMF3zsFvgOTQP0jz78OCTKCvV48sqyeAIMPPP8xFMixdGYcYXSqNUvwPwreN1X07EYoEKvNm4XGpHYU8EU+e++7j+jUGAVaEsyGCUZJ7bT57uzfgDr8aVvG+WfxgyYGOfIMoTXkkNaJQXQ6+VZzCBBdE75VGwIkyabPVS0hQHzXh9ZICJAuzxAVwE4IkE3PIOMOECWBPLSFKCfEfWcPAqK9Jf85SqmZKinsYcd0Ui4g5wlfHNJnNiB7EQSqDP5pA7IaQaDK4KVndYidkxMP9dSvFZA7OxWhb+WIyEkx3R8q8TQJVCkXkLHMxEzSy9B79aVcM/tymlIW5WSlWJE13GfTPAd25Q6lX8bOlCkTpekOqy3SHaNDWf8AAAAASUVORK5CYII=" alt="Logo">
+    </div>
+    <div class="my-auto">
+      ¡Te daremos la mejor experiencia!
+    </div>  
+    <ul class="flex items-center gap-4">
+      <li class="hover:bg-sky-700 w-28 rounded-lg">
+        <a target="_blank" class="flex flex-col items-center justify-center  py-4" href="https://openweathermap.org/">
+          <img class="w-14" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADH0lEQVR4nO2bvWsUQRjGfxcxYlRs/AArzYF2Vv4BFoJK1DSCTSIklY2SD2I62c4gaBMhlt6tHoKdf4ClH5WVYARBo4WgeFYG1NzJhNnwOq6ze7tHdrI7LzxkM+9keObZed+ZyezAv7YLGAVmgPmSYBq4AAxhsRowB3wHuiVFG5jVff3LBoCWAwQ3Cw9NEeYcILXZUCG+EfNlHva2cBhCJ4duRXEOnRT+V2ENaAILGk1dltafBWabeZDEZ0YJEFgqNGJmi2YP/iyIazOP2fgESQKoPzYt7MGfBXFt5rEwjwBruoFoQRHGhIDNnzUEZJt5kMQnSBKg7Ai8APgRQOVDYNyBWCwKY9FGaKxPC4+tBNVn1XdvlbcBWM8D8xWD6vN6CFx2IBkVhXElQOWnwcCBN1EUAj8C8CGADwGKj0WfA/BJED8L4KdBSrEO+AIsAYvAp4S6y8AtY5uqfn8AfE5xdpD3HCLotwDvgANie7kHeGWpP2zZim4DJoCvCWcHTZcEuBLTkVFL/TRWB1biiGsLXBLgcEwHdgM/UwgQbVOvAycN3wngt+sCvBek9mtE9iyFAKbvEbBd+O+7LkBDkLqoEdnNDAIo3BD+U64LMCFI3dWI7HRGAdQsEtk+1wU4Iki91kjKA0kC/BD+nS4L8EEQOgh0NNRzZM8zCPBU+I+6LEBDELokytWzLQ/YBFgFjgv/NZcFmBSE7oly9RzZmZQCrOo3Lzs/qBdZzgowLAgti/I3CXkgrS3GEXdFgBXjTZlHUKosshc9CjAY03nnBGj28CYXUgiwAzgGXDWGvbMCTPYgwFmLAD0Td0WAupGpzSMo9Sbl7vBXmQT4KIjsNTYsEodEvZdlEqAliIxY6sn1wO0yCfBEEFlKuVAKY6bPeo7EGxadAx5rQh1LnY4m2jLqvQXu6J9ZviXM+11i0A8BtjICLwB+BOBDgOJj0ecAfBKksFlg1oGhWBSmlQDnHSBSFEbQV8faDpDZbHzT/2mmqmEwJXdiNX2dtFsRhHH3h2v6Hl275MN+Kq7zCFM5QSVGlSGL/qa/X1B9UbdEN2I+sj9kuROz5EFv8gAAAABJRU5ErkJggg==" alt="conoce la Api">
+        </a>
+      </li>
+      <li class="hover:bg-sky-700 w-28 rounded-lg">
+        <a target="_blank"  class="flex flex-col items-center justify-center  py-4" href="https://github.com/mich471/WEATHER-APP">
+        <img class="w-14" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nO2ZSWgVQRCGP2OCS3CJYoy7uCtiDi6o8aAIikvQi4oGvCiiRo2E6FXJQdxQg4LgUTx4cyPuHhVRD0bcsyDu4IJrTNTnSEMNPOfNm1czb2YSJD8UDNNT1fV3V1dX90AH/l8UAEuBfUAt8Bj4CLSKmOdH0ma+WQL0pp2gC1AGXAJ+A5ZPMToXgFViK3Z0AyqBVwGcTycvga1A17hILAAaQiTglHpgfpQEzNTXREjAKcdl5kNFf+BOjCQskVtAYVgkhst0W20kT8WHrNBP0qjVxtIAFAUl0bWNwsnyCLNAKfpoO3DecsjhICnWy+B2CbspwA7gWRbOmd1+G1As1cGBDN/P05LoptgnBruEoSH0A7gKVACzgNFAvsgYebcROAN8BTYDnR22ihWLXxVilYpRTLf75mlHy+PbAYr+zUB5oouy7Ah9o0pCkaL/F5lmpUwZ1+MiJFKi9GGll5FLSiPLIyRSrvThfDoDBT5K8eoIiRxT+vAL6OlmYKnSwGdZkFFhPPBT6Uupm4H9SmWT56PGSaUve92Ua5XK02Igskzpy1k35afKuMyNgchYJRFT0KbgvULRfBMHhiiJvHNTblUomm86xUBkoiMKPor8cfjT4qZsZ4rZUu+MAPoAA+XZljiIJCNXtoYC6dtUFYOSBjYFn6TxJnAXaJRQeiPPtqwgehz2iIrvScvAzFIKnkjjNUmxWyRPm4p1khw37VGJGjnS11BggmTKRVI575a7MPsIkIKL0rhLqsuDwCngOlAns/FBpnN1xLPRIqPdBDwAbgPngCNyFtrvVaZUKzOFkW8yU2FjncuC9pKdbkbm+jBgpBlYE1KomZJ8j08SRua4GeuuTMFOuSFryXnS0yBfBqMxQL8tXucie504xZxT1soGlM7wW+AEsEFGaiTQK8l2XznHmOvQKikvvgYgYImYkiotSj1SXomcwd8qw65KbihtFMq75iyct5JkYaa015RGsU7apwJfMpAwpNOhJAQy9eKLJyo8DJhcbpcQFyU07J84z4ErwOJMHQDrsyRSrr3duBckLn0gx6MPK4Pc9VOBzwQSLkYSIe4fGwKQSADT/XZ0JI2xT3KxNlgTpx4YFYBITZCO8qTu8tNRZ5/2/di+7PMC8B/09BnLfqG1+yCMP8DDgIdtSOS+nBhDQQ+pNOMmciWKf/F5UmInYiCSAA5FfdExWc4HURGpA2YQE3IlBTc4fvj7xeskfWNrU0zXTSnIkbLldFL54gelorswyz2pAx0gIvwFLXDNiM6zHVAAAAAASUVORK5CYII=" alt="repositorio">
+        </a>
+      </li>
+
+    </ul>
+    
+  </header>
+  <main class="	my-20 ">
+    <div class="input-container mx-auto w-2/4 relative">
+      <form action="">
+        <input class="bg-slate-200 h-14 w-80 mr-5	rounded-lg text-center placeholder:text-sky-400	text-base outline-0 hover:bg-slate-300" type="text" id="input-data" placeholder="Agrega el nombre de tu ciudad">
+        <button class="bg-sky-400 h-14 w-40 rounded-lg text-base hover:bg-sky-700"  id="add">¡Consultar!</button> 
+        <button class=" active:animate-ping hover:shadow-red-400 top-1.5	 text-base ml-8 absolute"  id="remove"><img src="/app-simple-weather/assets/icons8-eliminar-78aa0994.svg" alt=""></button>    
+   
+      </form>
+    </div>
+    <span id="mensaje"></span>
+    <div class="cards-container flex mt-14 flex-wrap justify-center gap-8" id="app">
+      
+    </div>
+  </main>
+  
+</body>
+</html>
